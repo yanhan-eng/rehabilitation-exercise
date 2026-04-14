@@ -17,6 +17,7 @@
 
 项目结构：
 rehabilitation-exercise/
+
 ├── demo.py                     # 核心跟练系统主程序
 
 ├── Rehab_Pose_Training_Demo.ipynb     # YOLOv8 Pose 训练演示脚本 (Colab 可直接运行)
