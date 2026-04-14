@@ -43,7 +43,8 @@ rehabilitation-exercise/
 
 1.数据标注
 
-<img width="657" height="700" alt="image" src="https://github.com/user-attachments/assets/18aac38d-63b5-4d2b-bbbd-f0590bf2f431" />
+<img width="1820" height="786" alt="dbf313231a3fae08bd78911c42722f7e" src="https://github.com/user-attachments/assets/bffbf161-fb01-4245-8633-d7da9503fb81" />
+
 
 2.模型训练
 <img width="1606" height="483" alt="image" src="https://github.com/user-attachments/assets/7d122c58-0e61-4574-b1f1-8b2a43c333dc" />
