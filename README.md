@@ -39,16 +39,16 @@ rehabilitation-exercise/
 └── README.md                   # 本文件
 
 
-## 二、 核心硬件架构
+## 二、模型训练
 
-1. 核心边缘计算主机（大脑）
-最终选型：Jetson Orin Nano 8GB 开发套件
+1.数据标注
 
-2. 外设组合方案（感官交互）
-视觉采集设备：1080P、100°-120° 定焦无畸变广角 免驱 USB 摄像头模组。
-工程考量：广角保证患者在 1.5-2 米的短距离内做深蹲时，全身骨骼（头至脚踝）能完整入画；定焦避免了自动对焦引起的算法坐标点漂移。
-显示交互方案（逻辑双屏）：
-摒弃了物理双屏的高算力消耗，改为“显示器 + UI 代码左右分屏”的逻辑双屏方案。
+<img width="657" height="700" alt="image" src="https://github.com/user-attachments/assets/18aac38d-63b5-4d2b-bbbd-f0590bf2f431" />
+
+2.模型训练
+<img width="1606" height="483" alt="image" src="https://github.com/user-attachments/assets/7d122c58-0e61-4574-b1f1-8b2a43c333dc" />
+
+演示链接：https://colab.research.google.com/drive/1EF1AhbNw3iMY2gsT9BbhcigquW-NLhI_#scrollTo=yEDyTdS4fL7j
 
 ## 三、 软件设计
 ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
@@ -61,6 +61,24 @@ rehabilitation-exercise/
 │ 逻辑双屏 UI │◀────│ EMA 平滑输出 │◀────│ 表情痛苦预警 │
 │ (OpenCV 渲染) │ │ 动作建议生成 │ │ FER-Plus ONNX │
 └─────────────────┘ └─────────────────┘ └─────────────────┘
+
+结果展示：
+
+<img width="1468" height="670" alt="image" src="https://github.com/user-attachments/assets/3f5361f4-566f-4b01-a5a4-2f7c3ed888d9" />
+
+
+## 四、 核心硬件架构
+
+1. 核心边缘计算主机（大脑）
+最终选型：Jetson Orin Nano 8GB 开发套件
+
+2. 外设组合方案（感官交互）
+视觉采集设备：1080P、100°-120° 定焦无畸变广角 免驱 USB 摄像头模组。
+工程考量：广角保证患者在 1.5-2 米的短距离内做深蹲时，全身骨骼（头至脚踝）能完整入画；定焦避免了自动对焦引起的算法坐标点漂移。
+显示交互方案（逻辑双屏）：
+摒弃了物理双屏的高算力消耗，改为“显示器 + UI 代码左右分屏”的逻辑双屏方案。
+
+
 
 
 
